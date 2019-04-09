@@ -1,0 +1,43 @@
+{
+	Titulo: "Balanceo de carga",
+
+	Contenido: "Para distribuir las solicitudes de clientes entrantes en un clúster, puede usar un equilibrador de carga. Estos equilibradores de carga operan independientemente de Microsoft Application Center 2000 (Application Center), pero puede usar Application Center para administrarlos. Con la capacidad de administrar el equilibrio de carga, Application Center proporciona capacidades completas de administración de clústeres. Esta sección proporciona información sobre el uso de los diferentes tipos de equilibradores de carga que admite Application Center.",
+
+	Item: {
+			Titulo: "Usando NLB",
+			
+			Contenido: "Puede utilizar el Asistente para clústeres de Application Center New Cluster para configurar y configurar rápidamente NLB, sin ninguna tarea de configuración manual.",
+			
+			Item: {
+					Titulo: "Fondo NLB",
+					
+					Contenido: "NLB distribuye las solicitudes de clientes entrantes para los protocolos TCP y Universal Datagram Protocol (UDP), incluido HTTP, a través de múltiples miembros. A diferencia de otros equilibradores de carga, que requieren hardware dedicado, NLB es un equilibrador de carga basado en software que reside en cada miembro.",	
+					
+					Item: {
+							Titulo: "Usando CLB",
+			
+							Contenido: "En los clústeres de un nivel, Application Center puede usar NLB para distribuir solicitudes en un clúster de aplicaciones COM +.",
+			
+							Item: {
+									Titulo: "Cómo funciona CLB",
+					
+									Contenido: "Al usar CLB, cada servidor en un clúster web actúa como un enrutador para un clúster de aplicaciones COM +. Cada servidor web mantiene una lista de enrutamiento de los servidores COM + individuales que comprenden un grupo de aplicaciones COM +.",
+
+									Item: {
+											Titulo: "Solicitudes de manejo en entornos de carga equilibrada",
+			
+											Contenido: "En entornos de carga equilibrada, todas las solicitudes de los clientes están sujetas a equilibrio de carga. El equilibrio de carga presenta algunos desafíos únicos, ya que todas las solicitudes enviadas a un clúster pueden no beneficiarse del equilibrio de carga. Por ejemplo, las solicitudes para implementar aplicaciones deben ser procesadas por el controlador.",
+			
+											Item: {
+													Titulo: "Mantenimiento del estado de la sesión",
+					
+													Contenido: "El reenviador de solicitudes proporciona soporte genérico para mantener el estado de la sesión mediante el uso de cookies para asociar clientes con miembros particulares. Las solicitudes posteriores que contienen la cookie se reenvían al miembro apropiado.",	
+											}
+									
+									}
+							}	
+					}
+			}						
+	
+	}
+}
