@@ -1,31 +1,43 @@
 {
-	Titulo:
-	Contenido:
-	Item:
-}
+	Titulo: "Balanceo de carga",
 
-{
-	Titulo:
-	Contenido:
-	Item:
-}
+	Contenido: "Parað  Â§€&  £ 6¤  £€ ­Ù ð  Â§€&  £ 6¤  £€ ­Ù ð  Â§€&  £ 6¤  £€ ­Ù  distribuir las solicitudes de clientes entrantes en un clúster, puede usar un equilibrador de carga. Estos equilibradores de carga operan independientemente de Microsoft Appð g•€ ­‡ ­: ð  Â§€&  £ 6¤  £€ ­Ù ÉÐ ¬è ˆˆÀ °lication Center 2000 (Application Center), pero puede usar Application Center para administrarlos. Con la capacidad de administrar el equilibrio de carga, Appð g•€ ­‡ ­: ð  Â§€&  £ 6¤  £€ ­Ù ÉÐ ¬è ˆˆÀ °lication Center proporciona capacidades completas de administración de clústeres. Esta sección proporciona información sobre el uso de los diferentes tipos de equilibradores de carga que admite Application Centerð g•€ ­‡ ­: ð  Â§€&  £ 6¤  £€ ­Ù ÉÐ ¬è ˆˆÀ °.",
 
+	Item: {
+			Titulo: "Usando NLB",
+			
+			Contenido: "Puede utilizar elð g§€&  £ 6¤  £€ ­Ù ÉÐ ¬è ˆˆÀ ° Asistente para clústeres de Application Center New Cluster para configurar y configurar rápidamente NLB, sin ninguna tarea de configuración manual.",
+			
+			Item: {
+					Titulo: "Fondo NLB",
+					
+					Contenido: "NLB distribuyð  Â§€&  £ 6¤  £€ ­Ù ð  Â§€&  £ 6¤  £€ ­Ù ð  Â§€&  £ 6¤  £€ ­Ù ð  Â§€&  £ 6¤  £€ ­Ù ð  Â§€&  £ 6¤  £€ ­Ù e las solicitudes de clientes entrantes para los protocolos TCP y Universal Datagram Protocol (UDP), incluido HTTP, a través de múltiples miembros. A diferencia de otros eqð  Â§€&  £ 6¤  £€ ­Ù uilibradores de carga, que requieren hardware dedicado, NLB es un equilibrador de carga basado en software que reside en cada miembro.",	
+					
+					Item: {
+							Titulo: "Usando CLB",
+			
+							Contenido: "En los clústeres de un nivel, Applicatð  Â§€&  £ 6¤  £€ ­Ù ion Center puede usar NLB para distribuir solicitudes en un clúster de aplicaciones COM +.",
+			
+							Item: {
+									Titulo: "Cómo funciona CLB",
+					
+									Contenido: "Al usar CLB, cada servidor en ð  Â§€&  £ 6¤  £€ ­Ù un clúster web actúa como un enrutador para un clúster de aplicaciones COM +. Cada servidor web mantiene una lista de enrutamiento de los servidores COM + individuales que comprenden un grupo de aplicaciones COM +.",
 
-{
-	Titulo:
-	Contenido:
-	Item:
-}
-
-
-{
-	Titulo:
-	Contenido:
-	Item:
-}
-
-{
-	Titulo:
-	Contenido:
-	Item:
+									Item: {
+											Titulo: "Solicitudes de manejð  Â§€&  £ 6¤  £€ ­Ù o en entornos de carga equilibrada",
+			
+											Contenido: "Enð  Â§€&  £ 6¤  £€ ­Ù ð  Â§€&  £ 6¤  £€ ­Ù  entornos de carga equilibrada, todas las solicitudes de los clientes están sujetas a equilibrio de carga. El equilibrio de carga presenta algunos desafíos únicos, ya que todas las solicitudes enviadas a un clúster pueden no beneficiarseð  Â§€&  £ 6¤  £€ ­Ù  del equilibrio de carga. Por ejemplo, las solicitudes para implementar aplicaciones deben ser procesadas por el controlador.",
+			
+											Item: {
+													Titulo: "Mantð  Â§€&  £ 6¤  £€ ­Ù ð  Â§€&  £ 6¤  £€ ­Ù enimiento del estado de la sesión",
+					
+													Contenido: "El reenviador de solicitudes proporciona soporte genérico para mantener el estado de la sesión mediante el uso de cookies para asociar clientes con miembros particulares. Las solicitudes posterioresð  Â§€&  £ 6¤  £€ ­Ù ð  Â§€&  £ 6¤  £€ ­Ù  que contienen la cookie se reenvían al miembro apropiado.",	
+											}
+									
+									}
+							}	
+					}
+			}						
+	
+	}
 }
